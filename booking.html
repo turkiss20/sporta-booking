@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPORTA Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="booking">
+  <header>
+    <div class="logo">SPORTA</div>
+    <nav>
+      <a href="index.html" data-i18n="home_title"></a>
+      <a href="booking.html" data-i18n="book_now"></a>
+      <a href="login.html" data-i18n="login_title"></a>
+      <a href="history.html" data-i18n="user_history"></a>
+      <span id="lang-toggle" class="lang-toggle" data-i18n="lang_toggle"></span>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 data-i18n="book_now"></h1>
+    <form id="booking-form">
+      <label for="name" data-i18n="name"></label>
+      <input type="text" id="name" name="name" required data-i18n-placeholder="name">
+      <label for="email" data-i18n="email"></label>
+      <input type="email" id="email" name="email" required data-i18n-placeholder="email">
+      <label for="date" data-i18n="date"></label>
+      <select id="booking-date" name="date" required></select>
+      <label for="time" data-i18n="time"></label>
+      <select id="booking-time" name="time" required></select>
+      <label for="trainer" data-i18n="trainer"></label>
+      <select id="booking-trainer" name="trainer" required></select>
+      <label for="session" data-i18n="session_type"></label>
+      <select id="booking-session" name="session" required></select>
+      <br>
+      <button type="submit" class="btn" data-i18n="submit"></button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 SPORTA</p>
+  </footer>
+</body>
+</html>
